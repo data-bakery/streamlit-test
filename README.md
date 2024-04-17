@@ -1,2 +1,2 @@
 # streamlit-test
-Streamlit test repository
+A test repository for testing Streamlit
