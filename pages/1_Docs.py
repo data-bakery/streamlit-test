@@ -4,14 +4,13 @@ import streamlit as st
 
 # 페이지 기본 설정
 st.set_page_config(
-    page_icon="🐶",
-    page_title="빅공잼의 스트림릿 배포하기",
+    page_title="Streamlit deploy test",
     layout="wide",
 )
 
-st.subheader("도큐먼트")
+st.subheader("Document")
 
-if st.button("app.py 코드 보기"):
+if st.button("app.py Inside code"):
     code = '''
     import streamlit as st
     import pandas as pd
@@ -22,18 +21,17 @@ if st.button("app.py 코드 보기"):
 
     # 페이지 기본 설정
   st.set_page_config(
-      page_icon="🐶",
-      page_title="빅공잼의 스트림릿 배포하기",
+      page_title="Streamlit deploy test",
       layout="wide",
   )
 
   # 로딩바 구현하기
-  with st.spinner(text="페이지 로딩중..."):
+  with st.spinner(text="Loading pages..."):
       sleep(3)
 
   # 페이지 헤더, 서브헤더 제목 설정
-  st.header("빅공잼 페이지에 오신걸 환영합니다👋")
-  st.subheader("스트림릿 기능 맛보기")
+  st.header("Welcome to test page")
+  st.subheader("test funtions")
 
   # 페이지 컬럼 분할(예: 부트스트랩 컬럼, 그리드)
   cols = st.columns((1, 1, 2))
